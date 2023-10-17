@@ -1,6 +1,3 @@
-
-
-     
 while True:
     print("Time Calculator")
     print("1. Add 2 times")
@@ -99,7 +96,6 @@ while True:
         days = total_days
         hours = 0
         minutes = 0
-   
         print(f"The time in {total_days} days is {days}:{hours}:{minutes}")
     elif choice == "8":
         break
