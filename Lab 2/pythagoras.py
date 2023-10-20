@@ -17,7 +17,7 @@ while True:
 
 if pythagoras == 1:
     while True:
-        try: 
+        try:
             time.sleep(1)
             side1 = int(input("Please enter the length of side B: "))
             if side1 >= 0:

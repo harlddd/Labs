@@ -4,13 +4,13 @@ class Product:
         self.price = price
         self.quantity = quantity
     
-    def total_value(self):
+    def value(self):
         return self.price * self.quantity
     
     def add_items(self, quantity):
         self.quantity += quantity
     
-    def remove_items(self, quantity):
+    def remover(self, quantity):
         if quantity > self.quantity:
             print("Insufficient quantity")
         else:
@@ -20,10 +20,10 @@ class Product:
         return f"{self.name} {self.price} {self.quantity}"
 
 prod = Product("MacBookPro", 1000, 5)
-print(prod.total_value()) 
+print(prod.value()) 
 prod.add_items(2)
 print(prod.quantity)      
-prod.remove_items(3)
+prod.remover(3)
 print(prod.quantity)     
-prod.remove_items(5)
+prod.remover(5)
 print(prod)      

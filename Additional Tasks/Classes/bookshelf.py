@@ -17,14 +17,14 @@ class BookShelf:
     def add_book(self, book):
         if len(self.books) < self.capacity:
             self.books.append(book)
-            print(f"{book.title} has been added to the shelf.")
+            print(f"\033[34m{book.title} has been added to the shelf.\033[0m]")
         else:
             print("The shelf is full.")
     
     def remove_book(self, book):
         if book in self.books:
             self.books.remove(book)
-            print(f"{book.title} has been removed from the shelf.")
+            print(f"\033[31m{book.title} has been removed from the shelf.\033[0m")
         else:
             print("That book is not on the shelf.")
     

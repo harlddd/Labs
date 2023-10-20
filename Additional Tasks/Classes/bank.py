@@ -13,13 +13,13 @@ class BankAccount:
         else:
             self.balance -= amount
     
-    def get_balance(self):
+    def getbalance(self):
         return self.balance
 
 
 acct = BankAccount("1234")
-print(acct.get_balance()) 
+print(acct.getbalance()) 
 acct.deposit(100)
-print(acct.get_balance()) 
+print(acct.getbalance()) 
 acct.withdraw(50)
-print(acct.get_balance()) 
+print(acct.getbalance()) 
